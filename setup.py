@@ -119,7 +119,6 @@ if __name__ == "__main__":
     from jupyter_core.paths import jupyter_data_dir
     ipython_dir = jupyter_data_dir()
 
-
     setup(name="gmaps",
           version=version,
           description="IPython plugin for Google Maps JavaScript API",
@@ -134,5 +133,5 @@ if __name__ == "__main__":
           package_data={"gmaps.datasets": ["metadata.yaml","data/*.csv"]},
           url=r"https://github.com/pbugnion/gmaps",
           license="BSD License", 
-          platforms=["Linux", "Mac OS", "Windows"]
-    )
+          platforms=["Linux", "Mac OS", "Windows"],
+          requires=['ipywidgets', 'IPython', 'pyyaml'])
