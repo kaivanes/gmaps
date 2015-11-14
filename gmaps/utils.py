@@ -1,8 +1,8 @@
-
 import re
 
 dim_regexp_no_unit = re.compile(r"^\d+$")
 dim_regexp = re.compile(r"^(\d+)\s*([a-zA-Z]{2})$")
+
 
 def parse_css_dimension(value):
     """
@@ -29,4 +29,3 @@ def parse_css_dimension(value):
                 unit = match_object_with_unit.group(2)
                 return value + unit
         return value + "px"
-

@@ -1,9 +1,10 @@
 
-from loader import init
-from heatmap import heatmap
-from plainmap import plainmap
+from .loader import init
+from .heatmap import heatmap
+from .plainmap import plainmap
+from .pointmap import pointmap
 
-import datasets
+from . import datasets
 
 from IPython.display import display
 

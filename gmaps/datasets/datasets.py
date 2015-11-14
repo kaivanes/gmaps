@@ -29,7 +29,7 @@ def _load_metadata():
 
 def list_datasets():
     metadata = _load_metadata()
-    return metadata.keys()
+    return list(metadata.keys())
 
 def load_dataset(dataset_name):
     metadata = _load_metadata()

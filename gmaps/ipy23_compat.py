@@ -1,8 +1,8 @@
-
 import IPython
 from traitlets import Instance, CFloat
 
-IPy23 = (IPython.version_info[0] == 2) # true if IPython version is 2.3.
+IPy23 = (IPython.version_info[0] == 2)  # true if IPython version is 2.3.
+
 
 def FloatOrNone(**kwargs):
     """
@@ -12,4 +12,3 @@ def FloatOrNone(**kwargs):
         return Instance(float, allow_none=True, **kwargs)
     else:
         return CFloat(allow_none=True, default_value=None, **kwargs)
-

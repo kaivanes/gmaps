@@ -1,8 +1,8 @@
-
 from IPython.display import Javascript, display
-from ipywidgets import widget
+from ipywidgets import widgets
 
 __has_initialized__ = False
+
 
 def init():
     # FIXME
